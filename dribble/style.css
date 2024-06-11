@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+header img {
+    height: 60px;
+}
+header .logo{
+    width: 12%;
+
+}
+header{
+    background:white;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+}
+header *{
+    display: inline;
+    
+}
+header li {
+    margin: 20px;
+}
+header li a{
+    color: black;
+    font-weight: 15px;
+    font-family: "Martel Sans", sans-serif;
+    text-decoration: none;
+}
+.hero{
+    margin-top: 70px;
+    height:calc(100% -100px);
+    font-family: 'Martel Sans',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:black;
+    position: relative;
+    gap: 23px;
+    padding:  0px 30px;
+}
+.hero #s1{ 
+    font-family: 'Martel Sans',sans-serif;
+    font-weight:bolder;
+    font-size: 48px;
+    text-align: center;
+    color:black;    
+} 
+
+.hero #s2{
+    font-weight:400px;
+    font-size: 24px;
+    text-align: center;
+    color: gray;
+
+}
+.slider-box{
+    display: flex;
+
+}
+ .gal-image1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:7px;
+}
+.gal-image img{
+    width: 300px;
+    height: 200px;
+    border: 2px solid white;
+    box-shadow: 4px 7px 7px 0px white;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: 400ms;
+    gap:10px;
+}
+.gal-image img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:4%;
+}
+/* .btn1{
+    width: 40px;
+    margin-left: 10px;
+ 
+} */
+ button{
+     position: relative;
+     background-color: black;
+     color: white;
+     width: 200px;
+     padding: 15px 0;
+     font-size: 15px;
+     margin: 20px 10px;
+     font-family: bold;
+     display: inline;
+     border-radius: 25px;
+ }
+
+.container{
+    display: grid;
+    place-items:center;
+    background: white;
+
+}
+.slider{
+    height: 350px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+   
+}
+.slider-box{
+    display: flex;
+    width: 4500px;
+    animation: scroll 50s linear infinite;
+
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+.slide-img{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+    box-shadow: 2px  2px rgb(241, 232, 232);
+   
+}
+.slide-img img{
+    width: 100%;
+    transition: transfrom 1s;
+}
+img:hover{
+     transform: translateZ(20px);
+}

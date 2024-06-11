@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML New Page</title>
+    <style>
+      a {
+        text-decoration: none;
+        background-color: red;
+        color: white;
+        padding: 10px 12px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is Heading</h1>
+    <h2>This is Heading</h2>
+    <h3>This is Heading</h3>
+    <h4>This is Heading</h4>
+    <h5>This is Heading</h5>
+    <h6>This is Heading</h6>
+
+    <a href="./PDF/dummy.pdf"> Dowload PDF</a>
+
+    <script>
+      let btn = document.getElementsByTagName("a")[0];
+      let count = 1;
+      btn.addEventListener("click", () => {
+        count++;
+        if (count >= 2) {
+          confirm("Do You want to the PDF");
+        }
+      });
+    </script>
+  </body>
+</html>
